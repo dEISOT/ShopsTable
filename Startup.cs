@@ -28,12 +28,12 @@ namespace ShopsTable
         {
             services.AddControllers();
 
-            services.AddDbContext<GameStoreContext>(options =>
+            services.AddDbContext<ShopContext>(options =>
               options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddScoped<IGameRepository, GameRepository>();
+            services.AddScoped<IShopRepository, ShopRepository>();
 
-            services.AddScoped<IGameService, GameService>();
+            services.AddScoped<IShopService, ShopService>();
 
         }
 
