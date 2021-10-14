@@ -25,9 +25,10 @@ namespace ShopsTable.API.Context
             modelBuilder.Entity<Shop>().HasData(
                  new Shop[]
                  {
-                    new Shop { Id=new Guid("79c17863-1ef7-4ad8-9dd1-eb7e2cdf4d1d"), Name="Evroopt", Adress="Kurchatova,8", WorkTime = "8:00-20:00"},
-                    new Shop { Id=new Guid("5b00c426-6eaa-46d4-8268-b735b398f71d"), Name="Sosedi", Adress="Kurchatova,5", WorkTime = "10:00-17:00"},
-                    new Shop { Id=new Guid("245fac6d-6e3c-4984-ab80-57be57dff0af"), Name="Kopeechka", Adress="Kurchatova,6", WorkTime = "9:00-15:30"}
+                    new Shop { Id=new Guid("79c17863-1ef7-4ad8-9dd1-eb7e2cdf4d1d"), Name="Evroopt", Adress="Kurchatova, 8", WorkTime = "8:00-20:00"},
+                    new Shop { Id=new Guid("5b00c426-6eaa-46d4-8268-b735b398f71d"), Name="Sosedi", Adress="Kurchatova, 5", WorkTime = "10:00-17:00"},
+                    new Shop { Id=new Guid("5ec8357b-541e-46cb-bf26-08058501e586"), Name="Kopeechka", Adress="Kurchatova, 8", WorkTime = "8:00-20:00"},
+                    new Shop { Id=new Guid("f2d0146a-a4f1-4f13-8500-8eb9ec045f45"), Name="Korona", Adress="Sovetskaya, 3", WorkTime = "5:00-13:00"}
                  }
              );
 

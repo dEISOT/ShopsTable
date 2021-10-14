@@ -69,3 +69,32 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+
+
+.background {
+    border: 3px solid grey;
+    border-top: 3px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.block1 {
+    width: 125px;
+    height: 200px;
+    background: #eee9e9;
+    border-radius: 25px;
+    padding: 5px;
+    padding-right: 20px;
+    border: solid 1px black;
+    margin: 25px;
+    text-align: center;
+    outline-color: #fff5ee;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 1em;
+    background: black;
+    margin-bottom: 25px;
+}

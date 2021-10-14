@@ -42,6 +42,7 @@ namespace ShopsTable.API.Controllers
         {
             return _shopService.Get();
         }
+
     }
 
 }
