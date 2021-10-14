@@ -16,16 +16,16 @@ namespace ShopsTable.Client.Controllers
         private readonly ILogger<ShopController> _logger;
 
         public ShopController(ILogger<ShopController> logger,
-            IShopService gameServise)
+            IShopService shopService)
         {
             _logger = logger;
-            _shopService = gameServise;
+            _shopService = shopService;
         }
 
         public async Task<IActionResult> IndexAsync()
         {
-            var games = await _shopService.GetAsync();
-            return View(games);
+            var shops = await _shopService.GetAsync();
+            return View(shops);
         }
     }
 }

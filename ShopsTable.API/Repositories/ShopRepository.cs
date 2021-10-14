@@ -27,7 +27,8 @@ namespace ShopsTable.API.Repositories
 
         public Shop Get(Guid id)
         {
-            return _db.Shops.FirstOrDefault(g => g.Id == id);
+            
+            return _db.Shops.FirstOrDefault(g => string.Equals(g.Id, id));
         }
         public IEnumerable<Shop> Get()
         {

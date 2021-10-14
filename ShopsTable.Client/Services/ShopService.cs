@@ -14,7 +14,7 @@ namespace ShopsTable.Client.Services
         public async Task<IEnumerable<Shop>> GetAsync()
         {
             HttpClient httpclient = new HttpClient();
-            var result = await httpclient.GetAsync("https://localhost:44370/game");
+            var result = await httpclient.GetAsync("https://localhost:44312/shop");
 
             return JsonConvert.DeserializeObject<IEnumerable<Shop>>(await result.Content.ReadAsStringAsync());
         }

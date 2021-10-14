@@ -13,8 +13,10 @@ namespace ShopsTable.API.Models
 
         public List<Item> Items{ get; set; }
 
-        public double Price { get; set; }
+        public string Adress { get; set; }
 
-        public string imgBase64 { get; set; }
+        public string WorkTime { get; set; }
+
+        public string Name { get; set; }
     }
 }
