@@ -15,27 +15,17 @@ namespace ShopsTable.Client.Controllers
         private readonly IShopService _shopService;
         private readonly ILogger<ShopController> _logger;
 
-        public ShopController(ILogger<ShopController> logger, IShopService shopService)
+        public ShopController(ILogger<ShopController> logger,
+            IShopService gameServise)
         {
             _logger = logger;
-            _shopService = shopService;
+            _shopService = gameServise;
         }
 
         public async Task<IActionResult> IndexAsync()
         {
-            var shops = await _shopService.GetAsync();
-            return View(shops);
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            var games = await _shopService.GetAsync();
+            return View(games);
         }
     }
 }
