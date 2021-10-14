@@ -6,19 +6,12 @@ using System.Threading.Tasks;
 
 namespace ShopsTable.API.Models
 {
-    public class Item
+    public class Assortment
     {
         [Key]
         public Guid Id { get; set; }
 
         public Guid ShopId { get; set; }
-
-        public List<Shop> Shops { get; set; }
-
-        public string Name { get; set; }
-
-        public double Price { get; set; }
-
-        public string Description { get; set; }
+        public Guid ItemId { get; set; }
     }
 }
