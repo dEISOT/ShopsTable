@@ -32,6 +32,8 @@ namespace ShopsTable.API.Services
         {
             return _shopRepository.Get();
         }
+
+     
     }
 }
 

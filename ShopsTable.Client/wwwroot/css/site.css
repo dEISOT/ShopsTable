@@ -78,16 +78,17 @@ body {
 }
 
 .block1 {
-    width: 125px;
-    height: 200px;
-    background: #eee9e9;
+    width: 150px;
+    height: 125px;
     border-radius: 25px;
     padding: 5px;
     padding-right: 20px;
     border: solid 1px black;
     margin: 25px;
-    text-align: center;
+    text-align: -webkit-center;
     outline-color: #fff5ee;
+    background: linear-gradient(-45deg, #FEE864, #F5965E);
+    color: #f4f4f4;
 }
 
 .wrapper {
@@ -98,3 +99,4 @@ body {
     background: black;
     margin-bottom: 25px;
 }
+

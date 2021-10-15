@@ -22,15 +22,11 @@ namespace ShopsTable.Client.Controllers
             _shopService = shopService;
         }
 
-        public async Task<IActionResult> IndexAsync()
+        public async Task<IActionResult> Index()
         {
             var shops = await _shopService.GetAsync();
             return View(shops);
         }
-        public async Task<IActionResult> ItemAsync()
-        {
-            var items = await _shopService.GetAsync();
-            return View(items);
-        }
+       
     }
 }

@@ -12,7 +12,7 @@ namespace ShopsTable.API.Context
     {
         public DbSet<Shop> Shops { get; set; }
         public DbSet<Item> Items { get; set; }
-        public DbSet<Assortment> ShopItems { get; set; }
+        public DbSet<Assortment> Assortments { get; set; }
 
         public ShopContext(DbContextOptions<ShopContext> options)
           : base(options)
