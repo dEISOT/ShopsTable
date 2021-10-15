@@ -9,5 +9,8 @@ namespace ShopsTable.Client.Services.Contracts
     public interface IShopService
     {
         Task<IEnumerable<Shop>> GetAsync();
+
+        Task<Shop> GetAsync(Guid ShopId);
+
     }
 }

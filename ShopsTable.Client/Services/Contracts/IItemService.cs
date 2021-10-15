@@ -8,7 +8,9 @@ namespace ShopsTable.Client.Services.Contracts
 {
     public interface IItemService
     {
-        Task<IEnumerable<Item>> GetAsync();
+        Task<IEnumerable<Item>> GetAsync(Guid Id);
+
+
 
     }
 

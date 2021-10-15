@@ -18,5 +18,14 @@ namespace ShopsTable.Client.Services
 
             return JsonConvert.DeserializeObject<IEnumerable<Shop>>(await result.Content.ReadAsStringAsync());
         }
+
+        public async Task<Shop> GetAsync(Guid ShopId)
+        {
+            HttpClient httpclient = new HttpClient();
+            var result = await httpclient.GetAsync($"https://localhost:44312/shop/{ShopId}"); //занести в аппсетинг
+
+            return JsonConvert.DeserializeObject<Shop>(await result.Content.ReadAsStringAsync());
+        }
+
     }
 }

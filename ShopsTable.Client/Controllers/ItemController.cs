@@ -20,10 +20,6 @@ namespace ShopsTable.Client.Controllers
             _itemService = itemService;
         }
 
-        public async Task<IActionResult> Detail()
-        {
-            var items = await _itemService.GetAsync();
-            return View(items);
-        }
+        
     }
 }

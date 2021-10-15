@@ -34,7 +34,8 @@ namespace ShopsTable.API.Controllers
         [HttpGet("{id}")]
         public Shop Get(Guid id)
         {
-            return _shopService.Get(id);
+            var result = _shopService.Get(id);
+            return result;
         }
 
         [HttpGet]

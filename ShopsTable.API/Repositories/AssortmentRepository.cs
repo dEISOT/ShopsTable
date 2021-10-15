@@ -1,5 +1,6 @@
 ﻿using ShopsTable.API.Context;
 using ShopsTable.API.Models;
+using ShopsTable.API.Repositories.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ShopsTable.API.Repositories
 {
-    public class AssortmentRepository
+    public class AssortmentRepository : IAssortmentRepository
     {
         private readonly ShopContext _db;
 

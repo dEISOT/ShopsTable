@@ -28,6 +28,7 @@ namespace ShopsTable.Client
             services.AddControllersWithViews();
 
             services.AddScoped<IShopService, ShopService>();
+            services.AddScoped<IItemService, ItemService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

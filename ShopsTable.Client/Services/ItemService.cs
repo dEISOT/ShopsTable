@@ -11,10 +11,11 @@ namespace ShopsTable.Client.Services
 {
     public class ItemService : IItemService
     {
-        public async Task<IEnumerable<Item>> GetAsync()
+        public async Task<IEnumerable<Item>> GetAsync(Guid Id)
         {
+
             HttpClient httpclient = new HttpClient();
-            var result = await httpclient.GetAsync("https://localhost:44312/item"); //занести в аппсетинг
+            var result = await httpclient.GetAsync($"https://localhost:44312/item/{Id}"); //занести в аппсетинг
 
             return JsonConvert.DeserializeObject<IEnumerable<Item>>(await result.Content.ReadAsStringAsync());
         }

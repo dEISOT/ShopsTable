@@ -14,7 +14,7 @@
             @: </div><div class="row">
             }
             <div class="block1"> 
-                <a asp-controller="Shop" asp-action="Item"><font size="5" color="red" face="Arial">@shop[i].Name</font></a>
+                <a href="/Shop/Detail?shopId=@shop[i].Id"><font size="5" color="red" face="Arial">@shop[i].Name</font></a>
                 <p><font>@shop[i].Adress</font></p>
                 <p><font>@shop[i].WorkTime</font></p>
             </div>

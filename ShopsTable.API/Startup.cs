@@ -37,8 +37,11 @@ namespace ShopsTable.API
             services.AddControllers();
 
             services.AddScoped<IShopRepository, ShopRepository>();
-
             services.AddScoped<IShopService, ShopService>();
+            services.AddScoped<IItemService, ItemService>();
+            services.AddScoped<IItemRepository, ItemRepository>();
+            services.AddScoped<IAssortmentRepository, AssortmentRepository>();
+            services.AddScoped<IAssortmentService, AssortmentService>();
 
             services.AddSwaggerGen(options =>
             {

@@ -14,15 +14,13 @@ namespace ShopsTable.API.Services
         private readonly IAssortmentService _assortmentService;
 
 
-        public ItemService(IItemRepository itemRepository)
+        public ItemService(IItemRepository itemRepository, IAssortmentService assortmentService)
         {
             _itemRepository = itemRepository;
+            _assortmentService = assortmentService;
+
         }
 
-        public ItemService(IAssortmentService assortmentService)
-        {
-            _assortmentService = assortmentService;
-        }
 
 
         public async Task<Item> CreateAsync(Item item)
