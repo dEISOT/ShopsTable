@@ -38,6 +38,7 @@ namespace ShopsTable.API.Controllers
             return result;
         }
 
+
         [HttpGet]
         public IEnumerable<Shop> Get()
         {

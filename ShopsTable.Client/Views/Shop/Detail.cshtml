@@ -1,3 +1,20 @@
 ﻿@{
     @model Shop
+
 }
+
+<div>
+    @if (Model != null)
+    {
+        var shop = Model;
+        foreach (Item b in ViewBag.Items)
+        {
+
+            <div class="block1">
+                <p><font size="5">@b.Name</font></p>
+                <p>@b.Price $</p>
+            </div>
+        }
+    }
+</div>
+

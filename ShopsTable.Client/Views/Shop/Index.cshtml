@@ -13,11 +13,16 @@
             {
             @: </div><div class="row">
             }
-            <div class="block1"> 
-                <a href="/Shop/Detail?shopId=@shop[i].Id"><font size="5" color="red" face="Arial">@shop[i].Name</font></a>
-                <p><font>@shop[i].Adress</font></p>
-                <p><font>@shop[i].WorkTime</font></p>
-            </div>
+            <p class="example-shadow-2"><a href="/Shop/Detail?shopId=@shop[i].Id">@shop[i].Name</a></p>
         }
     }
 </div>
+
+
+                     @*<div class="block1">
+                         <a href="/Shop/Detail?shopId=@shop[i].Id">
+                             <font size="5" color="Black" face="Arial">@shop[i].Name</font>
+                             <p><font>@shop[i].Adress</font></p>
+                             <p><font>@shop[i].WorkTime</font></p>
+                         </a>
+                     </div>*@

@@ -10,6 +10,7 @@ a.navbar-brand {
 /* Provide sufficient contrast against white background */
 a {
   color: #0366d6;
+  text-decoration: none;
 }
 
 .btn-primary {
@@ -81,13 +82,11 @@ body {
     width: 150px;
     height: 125px;
     border-radius: 25px;
-    padding: 5px;
-    padding-right: 20px;
-    border: solid 1px black;
+    padding-top: 17px;
     margin: 25px;
     text-align: -webkit-center;
     outline-color: #fff5ee;
-    background: linear-gradient(-45deg, #FEE864, #F5965E);
+    background:#FAF1E1;
     color: #f4f4f4;
 }
 
@@ -98,5 +97,30 @@ body {
     grid-row-gap: 1em;
     background: black;
     margin-bottom: 25px;
+}
+
+p {
+    margin: 0;
+}
+
+
+.example-shadow-2 {
+  background: beige;
+  text-align: center;
+}
+.example-shadow-2 a {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 15px 35px;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 20px;
+  color: white;
+  background: #55acee;
+  box-shadow: 0 5px 0 #3C93D5;
+  transition: .3s;
+}
+.example-shadow-2 a:hover {
+  background: #6FC6FF;
 }
 
