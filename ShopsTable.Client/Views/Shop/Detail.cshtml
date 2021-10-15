@@ -1,19 +1,43 @@
 ﻿@{
     @model Shop
-
 }
-
+ 
 <div>
+
     @if (Model != null)
     {
         var shop = Model;
+        <table>
+            <colgroup>
+                <col span="2">
+                <col>
+            </colgroup>
+            <tr>
+                <th>№</th>
+                <th></th>
+                <th>Наименование</th>
+                <th></th>
+                <th>Цена, руб.</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Карандаш цветной</td>
+                <td>20,00</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Линейка 20 см</td>
+                <td>30,00</td>
+            </tr>
+        </table>
         foreach (Item b in ViewBag.Items)
         {
-
             <div class="block1">
-                <p><font size="5">@b.Name</font></p>
-                <p>@b.Price $</p>
+                <p>@b.Name</p>
+
+
             </div>
+
         }
     }
 </div>

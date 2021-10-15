@@ -11,8 +11,6 @@ namespace ShopsTable.API.Models
         [Key]
         public Guid Id { get; set; }
 
-        public List<Item> Items{ get; set; }
-
         public string Adress { get; set; }
 
         public string WorkTime { get; set; }
