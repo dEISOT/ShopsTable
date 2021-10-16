@@ -8,10 +8,11 @@
         var shop = Model;
         var i = 0;
         <h3>@shop.Name</h3>
+        <th><a href="">Добавить предмет</a></th>
         <br>
         <table>
         <colgroup>
-            <col span="2">
+            <col span="3">
             <col>
         </colgroup>
         <tr>
@@ -19,14 +20,16 @@
             <th>Наименование</th>
             <th>Цена, руб.</th>
         </tr>
+
         @foreach (Item b in ViewBag.Items)
         {
             i++;
-            <tr>
-                <td>@i</td>
-                <td>@b.Name </td>
-                <td>@b.Price</td>
-            </tr>
+        <tr>
+            <td>@i</td>
+            <td>@b.Name </td>
+            <td>@b.Price</td>
+            <td><th><a href="#">Удалить</a></th></td>
+        </tr>
         }
         </table>
 
