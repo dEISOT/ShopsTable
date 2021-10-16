@@ -10,6 +10,7 @@ a.navbar-brand {
 /* Provide sufficient contrast against white background */
 a {
   color: #0366d6;
+  text-decoration: none;
 }
 
 .btn-primary {
@@ -68,4 +69,58 @@ body {
   width: 100%;
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
+}
+
+
+.background {
+    border: 3px solid grey;
+    border-top: 3px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.block1 {
+    width: 150px;
+    height: 125px;
+    border-radius: 25px;
+    padding-top: 17px;
+    margin: 25px;
+    text-align: -webkit-center;
+    outline-color: #fff5ee;
+    background:black;
+    color: #f4f4f4;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 1em;
+    background: black;
+    margin-bottom: 25px;
+}
+
+p {
+    margin: 0;
+}
+
+
+.example-shadow-2 {
+  text-align: center;
+}
+.example-shadow-2 a {
+  width: 150px;
+  height: 175px;
+  display: inline-block;
+  border-radius: 5px;
+  padding-top: 25px;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 20px;
+  color: white;
+  background: #55acee;
+  box-shadow: 0 5px 0 #3C93D5;
+  transition: .3s;
+}
+.example-shadow-2 a:hover {
+  background: #6FC6FF;
 }

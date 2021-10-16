@@ -1,0 +1,28 @@
+﻿@{
+    @model IEnumerable<Shop>
+
+}
+
+<div>
+    @if (Model != null)
+    {
+        var shop = Model.ToArray();
+        for (int i = 0; i < Model.Count(); i++)
+        {
+            if (i == 0 || i % 3 == 0)
+            {
+            @: </div><div class="row">
+            }
+            <p class="example-shadow-2"><a href="/Shop/Detail?shopId=@shop[i].Id">@shop[i].Name<br><br>@shop[i].Adress<br>@shop[i].WorkTime</a></p>
+        }
+    }
+</div>
+
+
+@*<div class="block1">
+        <a href="/Shop/Detail?shopId=@shop[i].Id">
+            <font size="5" color="Black" face="Arial">@shop[i].Name</font>
+            <p><font>@shop[i].Adress</font></p>
+            <p><font>@shop[i].WorkTime</font></p>
+        </a>
+    </div>*@
