@@ -19,5 +19,16 @@ namespace ShopsTable.Client.Services
 
             return JsonConvert.DeserializeObject<IEnumerable<Item>>(await result.Content.ReadAsStringAsync());
         }
+
+
+
+        //public async Task<Item> CreateAsync(Item NewItem)
+        //{
+
+        //    HttpClient httpclient = new HttpClient();
+        //    var result = await httpclient.CreateAsync($"https://localhost:44312/item/{Id}"); //занести в аппсетинг
+
+        //    return JsonConvert.DeserializeObject<IEnumerable<Item>>(await result.Content.ReadAsStringAsync());
+        //}
     }
 }

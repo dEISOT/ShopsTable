@@ -37,5 +37,7 @@ namespace ShopsTable.Client.Controllers
             ViewBag.Items = items;
             return View("Detail", shop);
         }
+
+
     }
 }

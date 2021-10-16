@@ -23,8 +23,15 @@ namespace ShopsTable.API.Controllers
             _itemService = itemService;
         }
 
-    [HttpGet("{ShopId}")]
-    public IEnumerable<Item> GetByShopId(Guid ShopId)
+        //[HttpPost]
+        //public async Task<Item> CreateAsync([FromBody] Item item)
+        //{
+        //    await _itemService.CreateAsync(item);
+        //    return item;
+        //}
+
+        [HttpGet("{ShopId}")]
+         public IEnumerable<Item> GetByShopId(Guid ShopId)
         {
             return _itemService.GetByShopId(ShopId);
         }

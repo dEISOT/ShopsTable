@@ -190,3 +190,4 @@ D:\Labs\ShopsTable\ShopsTable.Client\obj\Debug\netcoreapp3.1\ShopsTable.Client.c
 D:\Labs\ShopsTable\ShopsTable.Client\obj\Debug\netcoreapp3.1\ShopsTable.Client.MvcApplicationPartsAssemblyInfo.cs
 D:\Labs\ShopsTable\ShopsTable.Client\obj\Debug\netcoreapp3.1\ShopsTable.Client.MvcApplicationPartsAssemblyInfo.cache
 D:\Labs\ShopsTable\ShopsTable.Client\obj\Debug\netcoreapp3.1\Razor\Views\Shop\Item.cshtml.g.cs
+D:\Labs\ShopsTable\ShopsTable.Client\obj\Debug\netcoreapp3.1\Razor\Views\Shop\Create.cshtml.g.cs

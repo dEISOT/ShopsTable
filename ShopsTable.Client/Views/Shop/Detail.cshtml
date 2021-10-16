@@ -1,44 +1,46 @@
 ﻿@{
     @model Shop
 }
- 
-<div>
 
+<div>
     @if (Model != null)
     {
         var shop = Model;
+        var i = 0;
+        <h3>@shop.Name</h3>
+        <br>
         <table>
-            <colgroup>
-                <col span="2">
-                <col>
-            </colgroup>
-            <tr>
-                <th>№</th>
-                <th></th>
-                <th>Наименование</th>
-                <th></th>
-                <th>Цена, руб.</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Карандаш цветной</td>
-                <td>20,00</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Линейка 20 см</td>
-                <td>30,00</td>
-            </tr>
-        </table>
-        foreach (Item b in ViewBag.Items)
+        <colgroup>
+            <col span="2">
+            <col>
+        </colgroup>
+        <tr>
+            <th>№</th>
+            <th>Наименование</th>
+            <th>Цена, руб.</th>
+        </tr>
+        @foreach (Item b in ViewBag.Items)
         {
-            <div class="block1">
-                <p>@b.Name</p>
-
-
-            </div>
-
+            i++;
+            <tr>
+                <td>@i</td>
+                <td>@b.Name </td>
+                <td>@b.Price</td>
+            </tr>
         }
+        </table>
+
+        
     }
 </div>
 
+@*<tr>
+    <td>1</td>
+    <td>Карандаш цветной</td>
+    <td>20,00</td>
+</tr>
+<tr>
+    <td>2</td>
+    <td>Линейка 20 см</td>
+    <td>30,00</td>
+</tr>*@
