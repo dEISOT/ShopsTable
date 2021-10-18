@@ -1,15 +1,14 @@
 ﻿using ShopsTable.API.Models;
-using ShopsTable.API.Services.Contracts;
 using ShopsTable.API.Repositories.Contracts;
+using ShopsTable.API.Services.Contracts;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace ShopsTable.API.Services
 {
     public class ShopService : IShopService
-    { 
+    {
         private readonly IShopRepository _shopRepository;
 
         public ShopService(IShopRepository shopRepository)
@@ -33,7 +32,7 @@ namespace ShopsTable.API.Services
             return _shopRepository.Get();
         }
 
-     
+
     }
 }
 

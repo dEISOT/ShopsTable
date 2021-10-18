@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "v0vu1P/5zJXbqqKwpARTEEt8MUFKonfPW8tiTpq5V+SlFpU9ShI77V9mc5iWxWH+hjiv5gmoz8q4EZa3FWa9eA==",
+  "dgSpecHash": "WlWVLnVCOfEpzcGTFRB0YcpsK/623BmuQAfIkpBwCCV+fnSpbEpnnS/PhZRJYSAdchjWEeUHMDsSQ5mWyeHDvQ==",
   "success": true,
-  "projectFilePath": "D:\\Labs\\ShopsTable\\ShopsTable.Client\\ShopsTable.Client.csproj",
+  "projectFilePath": "C:\\Users\\Администратор\\Downloads\\ShopsTable\\ShopsTable\\ShopsTable.Client\\ShopsTable.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Администратор\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Администратор\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",

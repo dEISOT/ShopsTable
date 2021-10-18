@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Labs\\ShopsTable\\ShopsTable.Client\\ShopsTable.Client.csproj": {}
+    "C:\\Users\\Администратор\\Downloads\\ShopsTable\\ShopsTable\\ShopsTable.Client\\ShopsTable.Client.csproj": {}
   },
   "projects": {
-    "D:\\Labs\\ShopsTable\\ShopsTable.Client\\ShopsTable.Client.csproj": {
+    "C:\\Users\\Администратор\\Downloads\\ShopsTable\\ShopsTable\\ShopsTable.Client\\ShopsTable.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Labs\\ShopsTable\\ShopsTable.Client\\ShopsTable.Client.csproj",
+        "projectUniqueName": "C:\\Users\\Администратор\\Downloads\\ShopsTable\\ShopsTable\\ShopsTable.Client\\ShopsTable.Client.csproj",
         "projectName": "ShopsTable.Client",
-        "projectPath": "D:\\Labs\\ShopsTable\\ShopsTable.Client\\ShopsTable.Client.csproj",
+        "projectPath": "C:\\Users\\Администратор\\Downloads\\ShopsTable\\ShopsTable\\ShopsTable.Client\\ShopsTable.Client.csproj",
         "packagesPath": "C:\\Users\\Администратор\\.nuget\\packages\\",
-        "outputPath": "D:\\Labs\\ShopsTable\\ShopsTable.Client\\obj\\",
+        "outputPath": "C:\\Users\\Администратор\\Downloads\\ShopsTable\\ShopsTable\\ShopsTable.Client\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Администратор\\AppData\\Roaming\\NuGet\\NuGet.Config",

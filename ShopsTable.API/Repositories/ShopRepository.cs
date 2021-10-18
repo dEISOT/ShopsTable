@@ -1,11 +1,10 @@
-﻿using ShopsTable.API.Models;
-using ShopsTable.API.Context;
+﻿using ShopsTable.API.Context;
+using ShopsTable.API.Models;
 using ShopsTable.API.Repositories.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
 
 namespace ShopsTable.API.Repositories
 {
@@ -27,7 +26,7 @@ namespace ShopsTable.API.Repositories
 
         public Shop Get(Guid id)
         {
-            
+
             return _db.Shops.FirstOrDefault(g => string.Equals(g.Id, id));
         }
         public IEnumerable<Shop> Get()

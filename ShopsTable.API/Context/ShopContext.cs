@@ -1,13 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ShopsTable.API.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace ShopsTable.API.Context
 {
-    
+
     public class ShopContext : DbContext
     {
         public DbSet<Shop> Shops { get; set; }
@@ -35,12 +32,12 @@ namespace ShopsTable.API.Context
             modelBuilder.Entity<Item>().HasData(
                 new Item[]
                 {
-                    new Item { Id=new Guid("87b249c0-3a12-4f95-acfa-43ce00dbd4fe"), Name="Chiken", Price=19.99, Description="", ShopId= new Guid("79c17863-1ef7-4ad8-9dd1-eb7e2cdf4d1d")},
-                    new Item { Id=new Guid("d0fa052c-3872-445b-b1f0-9d97db19a5a3"), Name="Milk", Price=5.99, Description="", ShopId= new Guid("79c17863-1ef7-4ad8-9dd1-eb7e2cdf4d1d")},
-                    new Item { Id=new Guid("6fe1bc2d-c786-4fd3-87dd-a84cbfecb2e1"), Name="Bread", Price=12.99, Description="", ShopId= new Guid("f2d0146a-a4f1-4f13-8500-8eb9ec045f45")},
-                    new Item { Id=new Guid("ef967ca0-66db-44dd-ad7a-d3daf1c37587"), Name="Iphone13", Price=998.99, Description="", ShopId= new Guid("5ec8357b-541e-46cb-bf26-08058501e586")},
-                    new Item { Id=new Guid("142cc352-1a11-415b-8608-691924863eff"), Name="T-Shirt", Price=8.99, Description="", ShopId= new Guid("5b00c426-6eaa-46d4-8268-b735b398f71d")},
-                    new Item { Id=new Guid("f753da50-cdd4-4859-9743-150fe17273e4"), Name="Beer", Price=6.99, Description="", ShopId= new Guid("79c17863-1ef7-4ad8-9dd1-eb7e2cdf4d1d")}
+                    new Item { Id=new Guid("87b249c0-3a12-4f95-acfa-43ce00dbd4fe"), Name="Chiken", Price=19.99, Description=""},
+                    new Item { Id=new Guid("d0fa052c-3872-445b-b1f0-9d97db19a5a3"), Name="Milk", Price=5.99, Description=""},
+                    new Item { Id=new Guid("6fe1bc2d-c786-4fd3-87dd-a84cbfecb2e1"), Name="Bread", Price=12.99, Description=""},
+                    new Item { Id=new Guid("ef967ca0-66db-44dd-ad7a-d3daf1c37587"), Name="Iphone13", Price=998.99, Description=""},
+                    new Item { Id=new Guid("142cc352-1a11-415b-8608-691924863eff"), Name="T-Shirt", Price=8.99, Description=""},
+                    new Item { Id=new Guid("f753da50-cdd4-4859-9743-150fe17273e4"), Name="Beer", Price=6.99, Description=""}
                 }
             );
 
@@ -63,7 +60,7 @@ namespace ShopsTable.API.Context
             Initialize(modelBuilder);
         }
 
-        
+
 
     }
 

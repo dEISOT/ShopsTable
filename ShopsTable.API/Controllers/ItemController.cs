@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using ShopsTable.API.Models;
 using ShopsTable.API.Services.Contracts;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace ShopsTable.API.Controllers
 {
@@ -23,15 +22,15 @@ namespace ShopsTable.API.Controllers
             _itemService = itemService;
         }
 
-        //[HttpPost]
-        //public async Task<Item> CreateAsync([FromBody] Item item)
-        //{
-        //    await _itemService.CreateAsync(item);
-        //    return item;
-        //}
+        [HttpPost]
+        public async Task<Item> CreateAsync([FromBody] Item item)
+        {
+            await _itemService.CreateAsync(item);
+            return item;
+        }
 
         [HttpGet("{ShopId}")]
-         public IEnumerable<Item> GetByShopId(Guid ShopId)
+        public IEnumerable<Item> GetByShopId(Guid ShopId)
         {
             return _itemService.GetByShopId(ShopId);
         }

@@ -1,21 +1,21 @@
 ﻿@{
     @model IEnumerable<Shop>
 
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <div>
-    @if (Model != null)
-    {
-        var shop = Model.ToArray();
-        for (int i = 0; i < Model.Count(); i++)
+    <div class="row">
+        @foreach (var shop in Model)
         {
-            if (i == 0 || i % 3 == 0)
-            {
-            @: </div><div class="row">
-            }
-            <p class="example-shadow-2"><a href="/Shop/Detail?shopId=@shop[i].Id">@shop[i].Name<br><br>@shop[i].Adress<br>@shop[i].WorkTime</a></p>
+            <div class="col-sm-4">
+                <p class="example-shadow-2">
+                    <a href="/Shop/Detail?shopId=@shop.Id">@shop.Name<br><br>@shop.Adress<br>@shop.WorkTime</a>
+                </p>
+            </div>
         }
-    }
+    </div>
 </div>
 
 

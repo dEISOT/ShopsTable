@@ -3,7 +3,6 @@ using ShopsTable.API.Repositories.Contracts;
 using ShopsTable.API.Services.Contracts;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace ShopsTable.API.Services
@@ -43,7 +42,7 @@ namespace ShopsTable.API.Services
         {
             IEnumerable<Guid> itemIDs = _assortmentService.GetItemsIDByShopID(ShopID);
             List<Item> items = new List<Item>();
-            foreach(Guid id in itemIDs)
+            foreach (Guid id in itemIDs)
             {
                 items.Add(Get(id));
             }
